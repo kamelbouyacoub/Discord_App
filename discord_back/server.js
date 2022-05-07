@@ -22,7 +22,7 @@ const server = http.createServer(app);
 
 // connect to mongo database
 mongoose.connect(process.env.MONGO_URI).then(() => {
-    debugger;
+  
     server.listen(PORT, () => {
         console.log(`Server is listening on ${PORT}`);
     });
